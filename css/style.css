@@ -231,7 +231,8 @@ header .header_bot p {
 }
 
 .top_sale .left img {
-    max-width: 100%;
+    max-width: 489px;
+    width: 489px;
 }
 
 .top_sale .left .price_new {
@@ -1172,15 +1173,16 @@ header .header_bot p {
     line-height: 39px;
     border: none;
     height: 39px;
-    margin-left: 20px;
-    margin-right: 20px;
     width: calc(100% - 40px);
-    margin-bottom: 18px;
     padding: 0 17px;
     font-family: "Century Gothic";
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    
+    max-width: 440px;
+    margin: 8px auto;
+    display: block;
 }
 
 .foot_form .form form button {
@@ -1198,8 +1200,11 @@ header .header_bot p {
     background: url("../images/mid_form_button.png") no-repeat center, #ffffff;
     background-position-x: calc(50% + 103px);
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 47px;
+    max-width: 440px;
+    display: block;
 }
 
 .foot_form .form form button::before {
@@ -1216,6 +1221,8 @@ header .header_bot p {
 @media screen and (max-width: 900px) {
     .foot_form .form form {
         margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
     }
     .foot_form .form {
         position: relative;
@@ -2167,5 +2174,267 @@ iframe {
     .what_is .items .right img {
         margin: 0 auto;
         display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    footer form input, footer form select {
+        display: block;
+    }
+    footer form button {
+        max-width: 440px;
+        margin: 4px auto;
+        display: block;
+    }
+    footer .main-example .label {
+        color: #333333;
+    }
+}
+
+@media (max-width: 550px) {
+    .pluses .item {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 6px;
+    }
+    .pluses .item p {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: inline;
+    }
+    .pluses .item p br {
+        display: none;
+    }
+    .pluses .content {
+        padding-top: 12px;
+    }
+    
+    header a {
+        margin-right: 24px;
+    }
+    
+    .top_sale .left,
+    footer .left {
+        margin: 0 auto;
+    }
+    .top_sale .left .hit,
+    footer .left .hit {
+        width: 165px;
+        height: 165px;
+        left: -10px;
+        top: auto;
+        bottom: -40px;
+        font-size: 42px;
+        line-height: 32px;
+        padding-bottom: 12px;
+    }
+    .top_sale .left .hit p span,
+    footer .left .hit p span {
+        font-size: 20px;
+    }
+    .top_sale .right,
+    footer .right {
+        padding-top: 0;
+    }
+    .what_is h2 {
+        margin-bottom: 16px;
+    }
+    .top_sale .right .timer,
+    footer .right .timer {
+        margin-bottom: 24px;
+    }
+    .top_sale .left .price_new,
+    footer .left .price_new {
+        font-size: 14px;
+        line-height: 26px;
+        top: 165px;
+    }
+    .top_sale .left .price_new p span,
+    footer .left .price_new p span {
+        font-size: 32px;
+    }
+    .top_sale .left img,
+    footer .left img {
+        max-width: 450px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 475px) {
+    .top_sale .left img,
+    footer .left img {
+        max-width: 375px;
+        width: 375px;
+    }
+    .top_sale .left .price_new p span,
+    footer .left .price_new p span {
+        font-size: 28px;
+    }
+    .top_sale .left .price_new,
+    footer .left .price_new {
+        top: 139px;
+        right: 12px;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .top_sale .left .hit,
+    footer .left .hit {
+        width: 135px;
+        height: 135px;
+        left: -16px;
+        bottom: -32px;
+        font-size: 36px;
+        line-height: 26px;
+    }
+    .top_sale .left .hit p span,
+    footer .left .hit p span {
+        font-size: 16px;
+    }
+    .main-example .count {
+        font-size: 64px;
+    }
+    .top_sale .right .timer,
+    footer .right .timer {
+        margin-bottom: 6px;
+    }
+    .main-example .label {
+        top: 90px;
+    }
+    .top_sale .right a {
+        max-width: 380px;
+    }
+    .main-example .time {
+        height: 90px;
+    }
+    
+    .how_we_work .items .item img {
+        width: 80px;
+        height: 80px;
+    }
+    .how_we_work .items .item p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .how_we_work .items {
+        margin-top: 24px;
+    }
+    .how_we_work .items .item {
+        margin-top: 16px;
+    }
+    .how_we_work h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    footer {
+        margin-top: 16px;
+    }
+    
+    .problems h2,
+    .what_is h2 {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 390px) {
+    .top_sale .left img,
+    footer .left img {
+        max-width: 320px;
+        width: 320px;
+    }
+    .top_sale .left .price_new,
+    footer .left .price_new {
+        top: 117px;
+        line-height: 20px;
+    }
+    .top_sale .left .price_new p span,
+    footer .left .price_new p span {
+        font-size: 24px;
+    }
+    .top_sale .right a {
+        max-width: 100%;
+    }
+    footer form button {
+        height: 64px;
+        line-height: 64px;
+    }
+    .foot_form .form form {
+        max-width: 100%;
+    }
+    .top_sale .left .hit, footer .left .hit {
+        width: 115px;
+        height: 115px;
+        left: -16px;
+        bottom: -32px;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .top_sale .left .hit p span, footer .left .hit p span {
+        font-size: 13px;
+    }
+    .copyright {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 340px) {
+    .top_sale .left img,
+    footer .left img {
+        max-width: 280px;
+        width: 280px;
+    }
+    .main-example .count {
+        font-size: 52px;
+    }
+    .main-example .label {
+        top: 70px;
+    }
+    .top_sale .right .timer, footer .right .timer {
+        margin-bottom: 0;
+        padding-bottom: 8px;
+    }
+    .top_sale .right a {
+        padding: 16px;
+    }
+    .top_sale .right a::after {
+        right: 16px;
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+    }
+    .foot_form .form form .timer {
+        padding: 0 12px;
+    }
+    .main-example .time {
+        height: 74px;
+    }
+    .foot_form .form form .timer {
+        height: 115px;
+    }
+    .foot_form .form form button {
+        height: 64px;
+        line-height: 64px;
+    }
+    .top_sale .left .hit, footer .left .hit {
+        width: 115px;
+        height: 115px;
+        left: -20px;
+        bottom: -40px;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .top_sale .left .price_new, footer .left .price_new {
+        top: 105px;
+        line-height: 16px;
+        font-size: 11px;
+    }
+    .top_sale .left .price_new p span, footer .left .price_new p span {
+        font-size: 20px;
+    }
+    footer .main-example .time {
+        height: 86px;
     }
 }
